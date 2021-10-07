@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Coo Creacion</title>
+</head>
+<body>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Crear Clases</a>
+        <a href="#">Crear Usuarios</a>
+        <a href="#">Crear Horarios</a>
+        <a href="#">Salir</a>
+    </nav>
+    <br>
+    <h3>Crear Clase</h3>
+    <div>
+        <label for="clase">Clase</label>
+        <select name="clase" id="clase">
+            <option value=""></option>
+            <option value="cardio">Cardio</option>
+            <option value="yoga">Yoga</option>                        
+        </select>
+
+        <label for="instructor">Instructor</label>
+        <select name="instructor" id="instructor">
+            <option value=""></option>
+            <option value="Juan">Juan</option>
+            <option value="Carlos">Carlos</option>                        
+        </select>
+        <br><br>
+        <div>
+            <label for="finicio">Fecha Incio</label>
+            <input type="number" id="finicio">
+            <label for="ffin">Fecha Fin</label>
+            <input type="number" id="finicio">
+        </div>
+        <br><br>
+        <button>Crear</button>
+    </div>
+    <br><br>
+    <button>Consultar</button>
+    <br><br>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Clase</th>
+                <th>Instructor</th>
+                <th>Fecha inicio</th>
+                <th>Fecha Fin</th>                                
+                <th>Accion</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Yoga</td>
+                <td>Carlos</td>
+                <td>1 pm</td>
+                <td>3 pm</td>                              
+                <td><a href="#">Eliminar</td>
+            </tr> 
+        </tbody>
+    </table> 
+    <br>
+    <button>Guardar</button>
+
+</body>
+</html>
