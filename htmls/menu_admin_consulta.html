@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Consulta</title>
+</head>
+
+<body>
+    <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Consultar Usuarios</a>
+    <a href="#">Crear Usuarios</a>
+    <a href="#">Reportes</a>
+    <a href="#">Salir</a>
+    </nav>
+
+    <h3>Consultar Usuarios</h3>
+    <h4>Seleccione un tipo de usuario</h4>
+    <label for="t_Usuario">Tipo Usuario</label><br>
+    <select name="rol" id="rol"><br>
+        <option value="rol"></option>
+        <option value="admin">Administrador</option>
+        <option value="cliente">Cliente</option>
+        <option value="instructor">Instructor</option>
+    </select><br><br>
+    <button>Consultar</button>
+
+    <br><br>
+
+    <table border="1">        
+        <caption>Usuarios</caption>
+        <thead>
+            <tr>
+                <th>Nombre Usuario</th>
+                <th>Contraseña</th>
+                <th>Tipo Usuario</th>
+                <th>Eliminar</th>
+            </tr>
+        </thead>
+
+        <tbody> 
+            <tr>
+                <td>Juan Carmona</td>
+                <td>12345</td>
+                <td>Cliente</td>
+                <td><a href="eliminar">Eliminar</a></td>
+            </tr>   
+            <tr>
+                <td>Maria Caicedo</td>
+                <td>54321</td>
+                <td>Coordiandora</td>
+                <td><a href="eliminar">Eliminar</a></td>
+            </tr>        
+  
+        </tbody>
+
+
+    </table>
+    <br>
+    <button>Eliminar</button>
+
+</body>
+
+</html>
