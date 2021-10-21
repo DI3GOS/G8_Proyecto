@@ -5,49 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coordinador Creacion Clase</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
 </head>
 <body>
-    <nav>
-    <a href="#">Inicio</a>
-    <a href="#">Crear Clases</a>
-    <a href="#">Crear Usuarios</a>
-    <a href="#">Crear Horarios</a>
-    <a href="#">Salir</a>
-    </nav>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Crear Clases</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="#">Crear Usuarios</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Crear Horarios</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link">Salir</a>
+        </li>
+    </ul>
     <br>
+    <h3>Generador de Clases</h3>
     <div>
-        <label for="n_clase">Nombre Clase</label>
-        <br>
-        <input type="text" id="n_clase">
-        <br>
-        <label for="descripcion">Descripcion</label>
-        <br>
-        <input type="text" id="descripcion">
-        <br>
-        <br>
-        <input type="submit" value="Crear">
-    </div>
-        <br>
-        <button>Consultar</button>
-        <br><br>   
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Nombre Clase</th>
-                <th>Descripcion</th>                
-                <th>Accion</th>
-            </tr>
-        </thead>
+        <form class="row g-3">
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">Nombre Clase</label>
+                <select id="inputState" class="form-select">
+                    <option selected>Seleccione</option>
+                    <option value="Cardio">Cardio</option>
+                    <option value="Yoga">Yoga</option>
+                </select>
+                <br><br>
+                <label for="inputState" class="form-label">Descripcion</label>
+                <select id="inputState" class="form-select">
+                    <option selected>Seleccione</option>
+                    <option value="name1">Manejo de maquinas para estirar</option>
+                    <option value="name2">Manejo de maquinaria para quemar calorias</option>
+                </select>
+        </form>
+        <br><br>
 
-        <tbody>
-            <tr>
+        <div class="col-12" style="float:left;">
+            <button type="submit" class="btn btn-primary">Crear</button>
+        </div>
+        <br><br>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Consultar</button>
+        </div>
+        <br><br>
+        <table class="table-bordered col-md-8">
+            <thead>
+              <tr>
+                <th scope="col">Nombre Clase</th>
+                <th scope="col">Descripcion</th>
+                <th scope="col">Accion</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Yoga</td>
+                <td>Manejo de maquinas para estirar</td>
+                <td>Eliminar</td>
+              </tr>
+              <tr>
                 <td>Cardio</td>
-                <td>Correr en maquina XXX</td>               
-                <td><a href="eliminar">Eliminar</td>
-            </tr> 
-        </tbody>
-    </table>    
+                <td>Manejo de maquinaria para quemar calorias</td>
+                <td>Eliminar</td>
+              </tr>
+            </tbody>
+          </table>
     <br>
-    <button>Guardar</button>
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </div>
+    <br><br>
+
 </body>
 </html>

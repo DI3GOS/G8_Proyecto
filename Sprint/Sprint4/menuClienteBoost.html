@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Cliente</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/styles.css">
+	<!--Bootstrap Script-->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	
+ 
+    </head>
+
+
+<body>
+
+	
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Consultar Horarios</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link">Salir</a>
+        </li>
+    </ul>
+    <br><br>
+
+    <div class="container" align="center">
+        <div class="form-floating mb-3 col-6">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Fecha Inicio</label>
+        </div>
+        <div class="form-floating col-6">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Fecha fin</label>
+        </div>
+        <br>
+        <button type="button" class="btn btn-primary">Consultar</button>
+    </div>
+    <br>
+	<div class="container" align="center">
+    <table class="table-bordered col-md-6" align="center">
+        <thead>
+            <tr>
+                <th scope="col">Nombre Clase</th>
+                <th scope="col">Instructor</th>
+                <th scope="col">Fecha Inicio</th>
+                <th scope="col">Fecha Fin</th>
+                <th scope="col">Accion</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cardio</td>
+                <td>Juan</td>
+                <td>1 pm</td>
+                <td>2 pm</td>
+                <td><a href="#">Agregar</a></td>
+            </tr>
+        </tbody>
+
+    </table>
+				    <br>
+   			<button type="button" class="btn btn-danger" id="basicToastBtn">Guardar</button>
+    		<br><br>
+	</div>
+	<div class="container" align="center">
+    <table class="table-bordered col-md-6">
+        <thead>
+            <tr>
+                <th scope="col">Nombre Clase</th>
+                <th scope="col">Instructor</th>
+                <th scope="col">Fecha Inicio</th>
+                <th scope="col">Fecha Fin</th>
+                <th scope="col">Accion</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cardio</td>
+                <td>Juan</td>
+                <td>1 pm</td>
+                <td>2 pm</td>
+                <td><a href="#">Eliminar</a></td>
+            </tr>
+        </tbody>
+    </table>
+		        <br><button type="button" class="btn btn-primary">Eliminar</button>
+<div class="toast-container position-fixed top-0 end-0 p-3">
+  <div id="basicToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header bg-primary text-light">
+      <h5 class="my-0">Guardado correctamente</h5>
+    </div>
+  </div>  
+</div>
+	</div>
+	<script>
+    document.querySelector("#basicToastBtn").onclick = function() {
+    new bootstrap.Toast(document.querySelector('#basicToast')).show();
+    };
+	</script>
+	
+</body>
+	
+
+</html>
