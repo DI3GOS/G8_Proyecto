@@ -13,13 +13,10 @@
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 	
- 
-    </head>
-
+	
+</head>
 
 <body>
-
-	
     <ul class="nav nav-tabs">
         <li class="nav-item">
             <a class="nav-link" href="#">Inicio</a>
@@ -34,7 +31,7 @@
     <br><br>
 
     <div class="container" align="center">
-        <div class="form-floating mb-3 col-6">
+        <div class="form-floating mb-3 col-6" >
             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
             <label for="floatingInput">Fecha Inicio</label>
         </div>
@@ -46,7 +43,6 @@
         <button type="button" class="btn btn-primary">Consultar</button>
     </div>
     <br>
-	<div class="container" align="center">
     <table class="table-bordered col-md-6" align="center">
         <thead>
             <tr>
@@ -66,13 +62,11 @@
                 <td><a href="#">Agregar</a></td>
             </tr>
         </tbody>
-
     </table>
-				    <br>
-   			<button type="button" class="btn btn-danger" id="basicToastBtn">Guardar</button>
-    		<br><br>
-	</div>
-	<div class="container" align="center">
+    <br>
+	<div align="center">
+    <button type="button" class="btn btn-primary" id="basicToastBtn" >Guardar</button>
+    <br><br>
     <table class="table-bordered col-md-6">
         <thead>
             <tr>
@@ -93,22 +87,34 @@
             </tr>
         </tbody>
     </table>
-		        <br><button type="button" class="btn btn-primary">Eliminar</button>
-<div class="toast-container position-fixed top-0 end-0 p-3">
+    <br>
+    <button type="button" class="btn btn-primary" id="basicToastBtn1">Eliminar</button>
+		</div>
+	<div class="toast-container position-fixed top-0 end-0 p-3">
   <div id="basicToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
     <div class="toast-header bg-primary text-light">
       <h5 class="my-0">Guardado correctamente</h5>
     </div>
   </div>  
 </div>
-	</div>
 	<script>
     document.querySelector("#basicToastBtn").onclick = function() {
     new bootstrap.Toast(document.querySelector('#basicToast')).show();
     };
 	</script>
 	
+<div class="toast-container position-fixed top-0 end-0 p-3 ">
+  <div id="basicToast1" class="toast" role="alert" aria-live="assertive" aria-atomic="true" >
+    <div class="toast-header bg-danger text-light" >
+      <h5 class="my-0">Horario eliminado</h5>
+    </div>
+  </div>  
+</div>
+	<script>
+    document.querySelector("#basicToastBtn1").onclick = function() {
+    new bootstrap.Toast(document.querySelector('#basicToast1')).show();
+    };
+	</script>
 </body>
-	
 
 </html>
